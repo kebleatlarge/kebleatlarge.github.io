@@ -1,1 +1,93 @@
-index page!!!!
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+<link rel="shortcut icon" href='kaltest/favicon.ico' type="image/x-icon">
+<link rel="icon" href='kaltest/favicon.ico' type="image/x-icon">
+
+  <style>
+    body{
+     background-color: #578fbf;
+      font-family: helvetica, sans-serif;
+    }
+    div.header {
+      text-align: center;
+      color: rgba(255,225,225,.7) ;
+      font-family: century gothic;
+      background: url('http://i.imgur.com/guwjTYf.jpg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    a {
+      color: mintcream;
+      font-family: 'Didact Gothic', sans-serif;
+    }
+    h1 {
+      font-size: 80px;
+      font-family: 'Didact Gothic', sans-serif;
+      padding: 0px;
+    }
+    h2{
+      text-align: center;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(255,0,0,.5);
+      font-size: 20px;
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+      font-family: 'Didact Gothic', sans-serif;
+      color: white;
+      text-align: center;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Keble At Large</h1>
+    <img src="http://jcr.keble.ox.ac.uk/wp-content/uploads/2013/04/Keebs1.png" width="220" height="160" alt="logo">
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Info Packs</a></li>
+      <li><a href="#">Committee</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <article>
+      <h2>Who We Are</h2>
+
+    <p>Keble at Large is the college’s student-led Outreach Society. Dedicated to myth-busting and truth-spreading, the society is built up of engaged, socially conscientious, Keblites who really want to make a difference to the way Oxford is perceived!</p>
+<br>
+    <h2>What we do</h2>
+    <p>Working with and funded through the college, the Keble at Large produces a wide-range of literature dedicated to providing as much information as possible to as many prospective students while keeping it friendly and easy to digest.
+
+    The Society, alongside the college, also organises and conducts school visits with the aim to inform students and teachers alike of the real Oxford that we all know and love.
+
+    So, whether you are a prospective student contemplating university, a teacher looking to encourage applications, or a Keblite keen to get involved, have a look around the website and see what we can do for you!</p>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
