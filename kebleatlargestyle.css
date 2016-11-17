@@ -1,0 +1,59 @@
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
+
+
+
+    body{
+     background-color: #578fbf;
+      font-family: helvetica, sans-serif;
+    }
+    div.header {
+      text-align: center;
+      color: rgba(255,225,225,.7) ;
+      font-family: century gothic;
+      background: url('http://i.imgur.com/guwjTYf.jpg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    a {
+      color: mintcream;
+      font-family: 'Didact Gothic', sans-serif;
+    }
+    h1 {
+      font-size: 80px;
+      font-family: 'Didact Gothic', sans-serif;
+      padding: 0px;
+    }
+    h2{
+      text-align: center;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(255,0,0,.5);
+      font-size: 20px;
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+      font-family: 'Didact Gothic', sans-serif;
+      color: white;
+      text-align: center;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
