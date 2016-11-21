@@ -38,12 +38,15 @@
       padding: 0px 10px 0px 10px;
     }
     article {
-      max-width: 500px;
-      padding: 20px;
+      max-width: 700px;
+      padding: 10px;
       margin: 0 auto;
       font-family: 'Didact Gothic', sans-serif;
       color: white;
       text-align: center;
+    }
+    div.creamtitle{
+      color: rgba(255,225,225,.7);
     }
     @media (max-width: 500px) {
       h1 {
@@ -67,4 +70,13 @@
         box-shadow: 0;
         display: inline;
     }
-    
+
+.carousel-control.left, 
+.carousel-control.right {
+    background-image: none
+}
+
+footer{
+  color: white;
+}
+
