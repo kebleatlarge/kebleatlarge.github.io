@@ -4,9 +4,6 @@
       margin: auto;
   }
 
-
-
-
     body{
      background-color: #578fbf;
       font-family: helvetica, sans-serif;
@@ -57,3 +54,17 @@
         display: block;
       }
     }
+    div.committee{
+      text-align: left;
+    }
+
+
+      #share-buttons img {
+        width: 50px;
+        padding: 5px;
+        border: 0;
+        border-radius: 40px;
+        box-shadow: 0;
+        display: inline;
+    }
+    
