@@ -33,23 +33,48 @@
     </ul>
   </div>
   <article>
+    <div class="creamtitle">
       <h2>Frequently Asked Questions</h2>
+    </div>
+  <p>
+  Click the question to reveal the answer! <br>If your question is not answered here, please email it to us - find our email in the 'Contact' page. 
+  </p>
   <br>
-  <div class="committee">
 
-    <p>Question 1: 
-    <br>Answer</p>
-<br>
-    <p>Question 2:
-    <br>Answer</p>
-<br>
-    <p>Question 3:
-    <br>Answer</p>
-  </article>
+<div class="show-decription">
+  <p><u>Question 1</u> <br />
+  <small>Answer to question 1</small></p>
+</div>
+  
+<div class="show-decription">
+  <p><u>Question 2 </u><br />
+  <small>Answer to question 2</small></p>
 </div>
 
+<script>
+$('div').on('click', function() {
+  $(this).toggleClass('show-description');
+});
+</script>
 
 
+
+
+
+
+
+
+
+
+  </article>
+
+
+<br>
+<br>
+<br>
+<footer>
+&copy; Copyright 2016 D. Alvarez, S. Timmis, A. Vandamme
+</footer>
 
 
 </body>
