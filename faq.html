@@ -18,6 +18,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  
  <link rel="stylesheet" href='kebleatlargestyle.css'> 
+ <script src="faq.js"></script>>
  
 </head>
 <body>
@@ -41,21 +42,20 @@
   </p>
   <br>
 
-<div class="show-decription">
-  <p><u>Question 1</u> <br />
-  <small>Answer to question 1</small></p>
-</div>
+<!--<div class="show-decription">
+  <p><u><a href="question1" id="question1">Where is keble?</a></u> <br />-->
+  <!--<small>Answer to question 1</small></p>
+</div>-->
+
+<input type="button" name="answer" value="Where is Keble?" onclick="showDiv()" />
+<div id="welcomeDiv"  style="display:none;" class="answer_list" > Keble is in Oxford.</div>
+
   
 <div class="show-decription">
   <p><u>Question 2 </u><br />
   <small>Answer to question 2</small></p>
 </div>
 
-<script>
-$('div').on('click', function() {
-  $(this).toggleClass('show-description');
-});
-</script>
 
 
 
