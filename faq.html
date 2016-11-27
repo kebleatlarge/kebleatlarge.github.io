@@ -47,14 +47,27 @@
   <!--<small>Answer to question 1</small></p>
 </div>-->
 
-<input type="button" name="answer" value="Where is Keble?" onclick="showDiv()" />
-<div id="welcomeDiv"  style="display:none;" class="answer_list" > Keble is in Oxford.</div>
+<!--<input type="button" name="answer" value="Where is Keble?" onclick="showDiv()" />
+<div id="welcomeDiv"  style=";" class="answer_list" > Keble is in Oxford.</div>-->
+
+<input type="button" type="submit" class="btn btn-success" value="What type of applicant is Keble looking for?" onclick="info();" /><br />
+<div id="info" style="display:none">Keble is not looking for a certain type of applicant and welcomes all individuals with an interest in learning </div>
+
+<script type="text/javascript">
+function info(){
+var currently = document.getElementById('info').getAttribute('style');
+    if (currently != 'display:none')
+        document.getElementById('info').setAttribute('style', 'display:none');
+    else
+        document.getElementById('info').setAttribute('style', 'display:block');
+};
+</script>
 
   
-<div class="show-decription">
+<!--<div class="show-decription">
   <p><u>Question 2 </u><br />
   <small>Answer to question 2</small></p>
-</div>
+</div>-->
 
 
 
