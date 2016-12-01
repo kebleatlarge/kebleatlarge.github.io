@@ -44,6 +44,7 @@
       font-family: 'Didact Gothic', sans-serif;
       color: white;
       text-align: center;
+      font-size: 17px;
     }
     div.creamtitle{
       color: rgba(255,225,225,.7);
@@ -90,4 +91,8 @@ small{
 }
 .show-description small{
   opacity: 1;
+}
+
+.btn {
+  font-size: 17px;
 }
