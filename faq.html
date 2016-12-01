@@ -38,7 +38,7 @@
       <h2>Frequently Asked Questions</h2>
     </div>
   <p>
-  Click the question to reveal the answer! <br>If your question is not answered here, please email it to us - find our email in the 'Contact' page. 
+  Click the question to reveal the answer! <br>If your question is not answered here, please <b> <a href="mailto:kebleatlarge@outlook.com?Subject=Keble At Large" target="_top">email</a> </b>  it to us. 
   </p>
   <br>
 
@@ -50,8 +50,16 @@
 <!--<input type="button" name="answer" value="Where is Keble?" onclick="showDiv()" />
 <div id="welcomeDiv"  style=";" class="answer_list" > Keble is in Oxford.</div>-->
 
-<input type="button" type="submit" class="btn btn-warning" value="What type of applicant is Keble looking for?" onclick="info();" /><br />
-<div id="info" style="display:none">Keble is not looking for a certain type of applicant and welcomes all individuals with an interest in learning </div>
+
+
+
+<input type="button" type="submit" class="btn btn-warning" value="How can I get involved with Keble At Large?" onclick="info();" /><br />
+<div id="info" style="display:none">If you are an Oxford undergraduate, Keble At Large is always looking for volunteers to help run tours and advise potential applicants. Fill out a form or send an email <b> <a href="contact.html">here </a> </b>. 
+
+<br>If you are a potential applicant seeking assistance or a teacher looking to organise a tour, fill out a form <b> <a href="contact.html">here </a> </b> or email <b> <a href="mailto:nicole.boothman@keble.ox.ac.uk?Subject=Keble At Large" target="_top">nicole.boothman@keble.ox.ac.uk</a> </b> directly.  </div>
+
+
+
 
 <script type="text/javascript">
 function info(){
@@ -72,14 +80,43 @@ var currently = document.getElementById('info').getAttribute('style');
 
 
 
+<?php
+$action=$_REQUEST['action'];
+if ($action=="")    /* display the contact form */
+    {
+    ?>
+    <form  action="" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="action" value="submit">
+    Your name:<br>
+    <input name="name" type="text" value="" size="30"/><br>
+    Your email:<br>
+    <input name="email" type="text" value="" size="30"/><br>
+    Your query:<br>
+    <textarea name="message" rows="7" cols="30"></textarea><br>
+    <input type="submit" value="Send email"/>
+    </form>
+    <?php
+    } 
+else                /* send the submitted data */
+    {
+    $name=$_REQUEST['name'];
+    $email=$_REQUEST['email'];
+    $message=$_REQUEST['message'];
+    if (($name=="")||($email=="")||($message==""))
+        {
+        echo "All fields are required, please fill the form again.";
+        }
+    else{        
+        $from="From: $name$email\r\nReturn-path: $email";
+        $subject="Message sent using your contact form";
+        mail("youremail@yoursite.com", $subject, $message, $from);
+        echo "Email sent!";
+        }
+    }  
+?>
 
 
-
-
-
-
-
-  </article>
+</article>
 
 
 <br>
