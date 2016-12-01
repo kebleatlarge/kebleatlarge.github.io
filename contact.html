@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
 
 <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
@@ -57,21 +59,38 @@
 <br>
 <br>
 
-<div>
+<div class='row'>
+<div class="col-md-4">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.588993747552!2d-1.2601426847005752!3d51.75883880010932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6a868d2ab75%3A0x10c88306ff8f05cc!2sKeble+College!5e0!3m2!1sen!2suk!4v1480614312703" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 
+<div class="col-md-4">
+</div>
 
-
+<div class="col-md-4">
+    <form  action="" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="action" value="submit">
+    Your name:<br>
+    <input name="name" type="text" value="" size="30"/><br>
+    Your email:<br>
+    <input name="email" type="text" value="" size="30"/><br>
+    Your query:<br>
+    <textarea name="message" rows="7" cols="30"></textarea><br>
+    <input type="button" type="submit" class="btn btn-warning" value="Submit" onclick="info2();" />
+    </form>
+</div>
+</div>
     
       
     <br>
 <div class="col-md-4">
     <h3> Emails </h3>
     <p> 
-    kebleatlarge@outlook.com
-    <br>nicole.boothman@keble.ox.ac.uk
-    <br>matthew.roberts@keble.ox.ac.uk
+    <u><a href="mailto:kebleatlarge@outlook.com?Subject=Hello%20again" target="_top">kebleatlarge@outlook.com</a></u>
+    <br>
+    <u><a href="mailto:nicole.boothman@keble.ox.ac.uk?Subject=Hello%20again" target="_top">nicole.boothman@keble.ox.ac.uk</a> </u>
+    <br>
+    <u> <a href="mailto:matthew.roberts@keble.ox.ac.uk?Subject=Hello%20again" target="_top">matthew.roberts@keble.ox.ac.uk</a> </u>
     </p>
 </div>
 <div class="col-md-4">
@@ -84,7 +103,7 @@
 </div>
 <div class="col-md-4">
     <h3> Phone number: </h3>
-    <p>++447788258346</p>
+    <p>+447788258346</p>
 </div>
 </article>
 
