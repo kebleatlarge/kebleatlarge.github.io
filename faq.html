@@ -1,114 +1,115 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+  <link href='bootstrapx/assets/css/bootstrap.min.css' rel='stylesheet'>
+  <link href='favicon.ico' rel="shortcut icon" type="image/x-icon">
+  <link href='favicon.ico' rel="icon" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+  <link href='kebleatlargestyle.css' rel="stylesheet">
+  <script src="faq.js">
+  </script>
 
-<link href='bootstrapx/assets/css/bootstrap.min.css' rel='stylesheet'>
+  <title></title>
 
-<link rel="shortcut icon" href='favicon.ico' type="image/x-icon">
-<link rel="icon" href='favicon.ico' type="image/x-icon">
-
-
-
- <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- 
- <link rel="stylesheet" href='kebleatlargestyle.css'> 
- <script src="faq.js"></script>>
- 
 </head>
 
 <body>
-
+  &gt;
   <div class="header">
-    <h1>Keble At Large</h1>
-    <img src="http://jcr.keble.ox.ac.uk/wp-content/uploads/2013/04/Keebs1.png" width="220" height="160" alt="logo">
+    <h1>Keble At Large</h1><img alt="logo" height="160" src="http://jcr.keble.ox.ac.uk/wp-content/uploads/2013/04/Keebs1.png" width="220">
     <ul>
-      <li><a href="index.html">About</a></li>
-      <li><a href="infopacks.html">Info Packs</a></li>
-      <li><a href="commitee.html">Committee</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li>
+        <a href="index.html">About</a>
+      </li>
+      <li>
+        <a href="infopacks.html">Info Packs</a>
+      </li>
+      <li>
+        <a href="commitee.html">Committee</a>
+      </li>
+      <li>
+        <a href="faq.html">FAQ</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
     </ul>
   </div>
 
   <article>
+
     <div class="creamtitle">
       <h2>Frequently Asked Questions</h2>
     </div>
-  <p>
-  Click the question to reveal the answer! <br>If your question is not answered here, please <b> <u><a href="mailto:kebleatlarge@outlook.com?Subject=Keble At Large" target="_top">email</a></u> </b>  it to us. 
-  </p>
+    
+    <p>Click the question to reveal the answer!<br>
+    If your question is not answered here, please <b><a href="mailto:kebleatlarge@outlook.com?Subject=Keble%20At%20Large" target="_top">email</a></b> it to us.</p><br>
+     <input class="btn btn-success" onclick="info();" type="submit" value="1. What is Keble at Large?"><br>
+    
+    <div id="info" style="display:none">
+      Keble at Large is a student-run voluntary organisation dedicated to directly helping applicants from school with a limited history of successful Oxbridge applications in order to ensure that Oxbridge is open to people from all backgrounds.
+    </div>
+    
+    <script type="text/javascript">
+    function info(){
+    var currently = document.getElementById('info').getAttribute('style');
+      if (currently != 'display:none')
+          document.getElementById('info').setAttribute('style', 'display:none');
+      else
+          document.getElementById('info').setAttribute('style', 'display:block');
+    };
+    </script><br>
+    
+    <input class="btn btn-success" onclick="info1();" type="submit" value="2. What types of events/activities does Keble At Large run?"><br>
+    <div id="info1" style="display:none">
+      Primarily, Keble at Large runs tours of the college and Q&A sessions with current undergraduates for potential applicants, busting myths regarding the application process and showing them what life at Oxford is really like. Keble at Large also runs an annual Alternative Open Day in the autumn to directly assist applicants with interview and aptitude test practice.
+    </div>
+    
+    <script type="text/javascript">
+    function info1(){
+    var currently = document.getElementById('info1').getAttribute('style');
+      if (currently != 'display:none')
+          document.getElementById('info1').setAttribute('style', 'display:none');
+      else
+          document.getElementById('info1').setAttribute('style', 'display:block');
+    };
+    </script><br>
+   
+    <input class="btn btn-success" onclick="info2();" type="submit" value="3. How can I get involved with Keble At Large?"><br>
+    <div id="info2" style="display:none">
+      If you are an Oxford undergraduate, Keble At Large is always looking for volunteers to help run tours and advise potential applicants. Fill out a form or send an email <u><a href="contact.html">here</a></u><br>
+      If you are a potential applicant seeking assistance or a teacher looking to organise a tour, fill out a form <u><a href="contact.html">here</a></u> or email <u><a href="mailto:nicole.boothman@keble.ox.ac.uk?Subject=Hello%20again" target="_top">nicole.boothman@keble.ox.ac.uk</a></u> directly.
+    </div>
+    
+    <script type="text/javascript">
+    function info2(){
+    var currently = document.getElementById('info2').getAttribute('style');
+      if (currently != 'display:none')
+          document.getElementById('info2').setAttribute('style', 'display:none');
+      else
+          document.getElementById('info2').setAttribute('style', 'display:block');
+    };
+    </script><br>
+    <br>
+    
+  </article><br>
+  <br>
+  <br>
 
-<br>
-
-<!--FAQ questions-->
-
-<input type="button" type="submit" class="btn btn-success" value="1. What is Keble at Large?" onclick="info();" ></br>
-<div id="info" style="display:none"> Keble at Large is a student-run voluntary organisation dedicated to directly helping applicants from school with a limited history of successful Oxbridge applications in order to ensure that Oxbridge is open to people from all backgrounds. </div>
-
-<script type="text/javascript">
-function info(){
-var currently = document.getElementById('info').getAttribute('style');
-    if (currently != 'display:none')
-        document.getElementById('info').setAttribute('style', 'display:none');
-    else
-        document.getElementById('info').setAttribute('style', 'display:block');
-};
-</script>
-
-<br>
-
-<input type="button" type="submit" class="btn btn-success" value="2. What types of events/activities does Keble Keble at Large run?" onclick="info1();" /><br />
-<div id="info1" style="display:none">Primarily, Keble at Large runs tours of the college and Q&A sessions with current undergraduates for potential applicants, busting myths regarding the application process and showing them what life at Oxford is really like. 
-Keble at Large also runs an annual Alternative Open Day in the autumn to directly assist applicants with interview and aptitude test practice.   </div>
-
-<script type="text/javascript">
-function info1(){
-var currently = document.getElementById('info1').getAttribute('style');
-    if (currently != 'display:none')
-        document.getElementById('info1').setAttribute('style', 'display:none');
-    else
-        document.getElementById('info1').setAttribute('style', 'display:block');
-};
-</script>
-
-<br>
-
-<input type="button" type="submit" class="btn btn-success" value="3. How can I get involved with Keble At Large?" onclick="info2();" /><br />
-<div id="info2" style="display:none">If you are an Oxford undergraduate, Keble At Large is always looking for volunteers to help run tours and advise potential applicants. Fill out a form or send an email  <u><a href="contact.html">here</a></u> 
-<br>
-If you are a potential applicant seeking assistance or a teacher looking to organise a tour, fill out a form <u><a href="contact.html" >here</a> </u> or email <u><a href="mailto:nicole.boothman@keble.ox.ac.uk?Subject=Hello%20again" target="_top">nicole.boothman@keble.ox.ac.uk</a></u> directly. </div>
-
-<script type="text/javascript">
-function info2(){
-var currently = document.getElementById('info2').getAttribute('style');
-    if (currently != 'display:none')
-        document.getElementById('info2').setAttribute('style', 'display:none');
-    else
-        document.getElementById('info2').setAttribute('style', 'display:block');
-};
-</script>
-
-<br>
-<br>
-
-
-  </article>
-
-
-<br>
-<br>
-<br>
-<footer>
-&copy; Copyright 2016 D. Alvarez, S. Timmis, A. Vandamme
-</footer>
-
+  <footer>
+    &copy; Copyright 2016 D. Alvarez, S. Timmis, A. Vandamme
+  </footer>
 
 </body>
-</html>
 
+</html>
