@@ -51,6 +51,7 @@
 <div id="welcomeDiv"  style=";" class="answer_list" > Keble is in Oxford.</div>-->
 
 
+<<<<<<< Updated upstream
 
 
 <input type="button" type="submit" class="btn btn-warning" value="How can I get involved with Keble At Large?" onclick="info();" /><br />
@@ -60,6 +61,10 @@
 
 
 
+=======
+<input type="button" type="submit" class="btn btn-success" value="1. What is Keble at Large?" onclick="info();" /><br />
+<div id="info" style="display:none"> Keble at Large is a student-run voluntary organisation dedicated to directly helping applicants from school with a limited history of successful Oxbridge applications in order to ensure that Oxbridge is open to people from all backgrounds. </div>
+>>>>>>> Stashed changes
 
 <script type="text/javascript">
 function info(){
@@ -71,20 +76,45 @@ var currently = document.getElementById('info').getAttribute('style');
 };
 </script>
 
-  
-<!--<div class="show-decription">
-  <p><u>Question 2 </u><br />
-  <small>Answer to question 2</small></p>
-</div>-->
+<br>
+
+<input type="button" type="submit" class="btn btn-success" value="2. What types of events/activities does Keble Keble at Large run?" onclick="info1();" /><br />
+<div id="info1" style="display:none">Primarily, Keble at Large runs tours of the college and Q&A sessions with current undergraduates for potential applicants, busting myths regarding the application process and showing them what life at Oxford is really like. 
+Keble at Large also runs an annual Alternative Open Day in the autumn to directly assist applicants with interview and aptitude test practice.   </div>
+
+<script type="text/javascript">
+function info1(){
+var currently = document.getElementById('info1').getAttribute('style');
+    if (currently != 'display:none')
+        document.getElementById('info1').setAttribute('style', 'display:none');
+    else
+        document.getElementById('info1').setAttribute('style', 'display:block');
+};
+</script>
+
+<br>
+
+<input type="button" type="submit" class="btn btn-success" value="3. How can I get involved with Keble At Large?" onclick="info2();" /><br />
+<div id="info2" style="display:none">If you are an Oxford undergraduate, Keble At Large is always looking for volunteers to help run tours and advise potential applicants. Fill out a form or send an email  <u><a href="contact.html">here</a></u> 
+<br>
+If you are a potential applicant seeking assistance or a teacher looking to organise a tour, fill out a form <u><a href="contact.html" >here</a> </u> or email <u><a href="mailto:nicole.boothman@keble.ox.ac.uk?Subject=Hello%20again" target="_top">nicole.boothman@keble.ox.ac.uk</a></u> directly. </div>
+
+<script type="text/javascript">
+function info2(){
+var currently = document.getElementById('info2').getAttribute('style');
+    if (currently != 'display:none')
+        document.getElementById('info2').setAttribute('style', 'display:none');
+    else
+        document.getElementById('info2').setAttribute('style', 'display:block');
+};
+</script>
+
+<br>
+<br>
 
 
+<article>
 
-
-<?php
-$action=$_REQUEST['action'];
-if ($action=="")    /* display the contact form */
-    {
-    ?>
     <form  action="" method="POST" enctype="multipart/form-data">
     <input type="hidden" name="action" value="submit">
     Your name:<br>
@@ -95,28 +125,16 @@ if ($action=="")    /* display the contact form */
     <textarea name="message" rows="7" cols="30"></textarea><br>
     <input type="submit" value="Send email"/>
     </form>
-    <?php
-    } 
-else                /* send the submitted data */
-    {
-    $name=$_REQUEST['name'];
-    $email=$_REQUEST['email'];
-    $message=$_REQUEST['message'];
-    if (($name=="")||($email=="")||($message==""))
-        {
-        echo "All fields are required, please fill the form again.";
-        }
-    else{        
-        $from="From: $name$email\r\nReturn-path: $email";
-        $subject="Message sent using your contact form";
-        mail("youremail@yoursite.com", $subject, $message, $from);
-        echo "Email sent!";
-        }
-    }  
-?>
-
 
 </article>
+
+
+<!--<div class="show-decription">
+  <p><u>Question 2 </u><br />
+  <small>Answer to question 2</small></p>
+</div>-->
+
+  </article>
 
 
 <br>

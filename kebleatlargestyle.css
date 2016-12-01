@@ -93,6 +93,11 @@ small{
   opacity: 1;
 }
 
+<<<<<<< Updated upstream
 .btn {
   font-size: 17px;
+=======
+div.bluetext{
+  color: blue;
+>>>>>>> Stashed changes
 }
